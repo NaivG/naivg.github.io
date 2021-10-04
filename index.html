@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <!-- 网站&优化：NaivG,原版网站作者kaygb -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>NaivG的主页</title>
+    <meta name="description" content="这里是NaivG的个人主页，目前站长仍在学习中，每天抽出时间来看书学习，励志成为一个摸鱼达人(bushi)。">
+    <meta name="keywords" content="NaivG的个人主页">
+    <link rel="icon" type="image/ico" href="./home.png">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 被发现了( •̀ ω •́ )✧ -->
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <h1>Hi，我是NaivG，这里是我的主页！</h1>
+                <p>很荣幸您能访问我的网站！ 目前我仍在学习中，励志成为一个摸鱼达人(bushi)。</p>
+                <p>
+                    换新站啦ヾ(•ω•`)o
+                    <br> nov.pub被墙了，换了个域名，随便申请了SSL证书
+                    <br> win桌面html报错一堆，之后去修
+                </p>
+                <p>Catch me:</p>
+                <div class="row">
+                    <button id="kaygb-blog" class="btn btn-primary col-lg-4">博客</button>
+                    <a href="./blog/index.html" id="kaygb-blog-a" target="_blank" class="btn btn-primary col-lg-4">博客</a>
+                    <a href="./win10/demo.html" target="_blank" class="btn btn-secondary col-lg-4">Win桌面</a>
+                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=naivg@qq.com" target="_blank" id="kaygb-mail-a" class="btn btn-success col-lg-4">发邮件</a>
+                    <button id="kaygb-mail" class="btn btn-success col-lg-4">发邮件</button>
+                </div>
+                <span id="moe">
+				<h4>
+					手扣代码真的好累啊
+				<a href="javascript:void($('#moe').html('<h4>怎么啦(•ω•`)</h4>'));">（；´д｀）</a>
+				</h4>
+				</span>
+                <h4>想重写一下网页结果被js吊锤o(￣┰￣*)</h4>
+                <footer>
+                    <p>Copyright 2018 - Now <a href="https://starxn.com" target="_blank">星辰云</a>
+                        <br>Mod by <a href="https://afqaq.com" target="_blank" rel="">阿付</a>
+                        <br>Website&Optimization by NaivG
+                        <br>
+                        <span id="fake-wordpress">
+						Powered by <a href="javascript:void($('#fake-wordpress').html('Powered by HTML5(๑•̀ㅂ•́)و✧'));">W0rdPress</a>
+						</span>
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div id="backcur"></div>
+    <div id="aplayer" class="aplayer" data-order="random" data-id="6678743774" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true" data-volume="0.8"></div>
+    <!-- aplayer -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+    <!-- end_aplayer -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script defer src="https://cdn.staticfile.org/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/layer/layer.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kaygb/kaygb@master/js/v3.js"></script>
+    <script src="https://cdn.staticfile.org/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/NaivG/live2d-widget@latest/autoload.js"></script>
+
+    <script>
+        window.onload = function() {
+            //swal ( "更新公告" ,  "本站将于2021/9/4 10:00进行更新，完成后将会升级到最新版本" ,  "info" );
+            swal({ //swal马上要废弃了
+                title: "公告",
+                text: "所有的项目文件都存放在这里：csy7.ys168.com",
+                closeOnClickOutside: true,
+            });
+            const notyf = new Notyf();
+            notyf.success({
+                duration: 5000,
+                message: '网站成功升级到1.5版本',
+                dismissible: true
+            });
+            document.addEventListener('visibilitychange', function() {
+                if (document.visibilityState == 'hidden') {
+                    normal_title = document.title;
+                    document.title = '暗中观察(•ω•`).jpg';
+                } else document.title = normal_title;
+            });
+        };
+
+        $('#kaygb-blog').on('click', function() {
+            layer.open({
+                type: 2,
+                title: '博客',
+                shadeClose: true,
+                shade: false,
+                maxmin: true,
+                area: ['80%', '100%'],
+                content: './blog/index.html'
+            });
+        });
+        $('#kaygb-mail').on('click', function() {
+            layer.open({
+                type: 2,
+                title: '邮件',
+                shadeClose: true,
+                shade: false,
+                maxmin: true,
+                area: ['80%', '100%'],
+                content: '//mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=naivg@qq.com'
+            });
+        });
+
+        //按钮
+
+
+        //鼠标跟随
+        var backcur = document.getElementById("backcur")
+        var pixaldata = [] //定义数组存放每个span的信息
+        var pixallife = 50 //设置生命周期
+
+        window.addEventListener("mousemove", function(evt) {
+            var span = document.createElement("span") //新建粒子span
+            span.className = "pixal" //使用pixal作为class设置
+            backcur.appendChild(span) //将span作为子元素添加至#back层
+            pixaldata.push({ //插入span信息
+                time: 0, //初始时间
+                color: "rgba(" + parseInt(Math.random() * 255) + "," + parseInt(Math.random() * 255) + "," + parseInt(Math.random() * 255) + "," + parseInt(Math.random() * 255) + ")", //粒子颜色
+                vx: Math.random() * 0.4, //x轴位移速度
+                vy: Math.random() * 0.4, //y轴位移速度
+                sx: evt.x, //根据鼠标坐标设置粒子的起始坐标
+                sy: evt.y
+            });
+        });
+
+        function draw() {
+            for (var i = 0; i < pixaldata.length; i++) {
+                pixal = pixaldata[i] //指定粒子属性
+                children = backcur.children[i] //指定当前子元素
+                pixal.time++ //增加时间
+                    pixal.sx += pixal.vx * 2 //设置位移距离
+                pixal.sy += pixal.vy * 2
+                children.style.background = pixal.color //设置背景颜色
+                children.style.left = pixal.sx + "px" //根据位移值设置坐标
+                children.style.top = pixal.sy + "px"
+                if (pixal.time >= pixallife) {
+                    pixaldata.splice(i, 1); //删除数组元素
+                    backcur.removeChild(backcur.childNodes[i]); //删除子元素
+                };
+            };
+        };
+        setInterval(draw, 1);
+    </script>
+    <style>
+        /*鼠标跟随css*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        span.pixal {
+            position: absolute;
+            left: -5px;
+            top: -5px;
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+        }
+    </style>
+</body>
+
+</html>
