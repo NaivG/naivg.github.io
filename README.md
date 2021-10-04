@@ -1,1 +1,3 @@
-# naivg.github.io
+# 这里是NaivG的旧版主页归档
+---
+需要的话可以fork一份
