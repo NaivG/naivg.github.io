@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Akina絵 Home">
+    <meta name="keywords" content="Akina絵,NaivG,Homepage">
+    <meta name="author" content="NaivG, Dmego">
+    <title>猫の屋</title>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/onlinewebfonts.css"/>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/dmego-home-page@latest/assets/css/vno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/donate.css"/>
+    <link rel="apple-touch-icon" href="./favourite.png">
+    <link rel="icon" type="image/ico" href="./favourite.png">
+</head>
+
+<body>
+    <span class="mobile btn-mobile-menu">
+        <i class="social fas fa-list btn-mobile-menu__icon"></i>
+        <i class="social fas fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+    <header id="panel" class="panel-cover">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+                    <div>            
+                        <a href="#" title="" class="blog-button">
+                            <div class="img"><img src="./assets/img/logo.jpg" alt="img" class="js-avatar iUp profilepic"></div>
+                        </a>
+                    </div>
+                    <h1 class="panel-cover__title panel-title iUp">
+                        <a href="#" title="NaivG Home">NaivG</a>
+                    </h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">Code Create Life</p>
+                    <hr class="panel-cover__divider iUp" />
+                    <p id="description" class="panel-cover__description iUp">如何得与凉风约, 不共尘沙一并来!
+                        <br/>
+                        <strong>-「中牟道中」</strong>
+                    </p>
+                    <div class="navigation-wrapper iUp">
+                        <div>
+                            <nav class="cover-navigation cover-navigation--primary">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="/" class="blog-button">首页</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://blog.nekopad.top" class="blog-button" target="_blank">博客</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://server.nekopad.top" class="blog-button" target="_blank">服务器</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="#" class="blog-button" id="donate-button">捐赠</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="iUp">
+                            <nav class="cover-navigation navigation--social">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="https://github.com/NaivG/" title="github" target="_blank">
+                                            <i class='social fab fa-github'></i>
+                                            <span class="label">github</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=854560656&website=nekopad.top" title="qq" target="_blank">
+                                            <i class='social fab fa-qq'></i>
+                                            <span class="label">qq</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="navigation__item">
+                                        <a href="https://space.bilibili.com/277604038" title="bilibili" target="_blank">
+                                            <i class='social fab fa-bilibili'></i>
+                                            <span class="label">bilibili</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="mailto:naivg@qq.com" title="email">
+                                            <i class='social fas fa-envelope'></i>
+                                            <span class="label">email</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay cover-slate"></div>
+        </div>
+        <!-- <div class="beian iUp">
+            <a class="icp" href="http://www.miitbeian.gov.cn/publish/query/indexFirst.action" target="_blank">XXX</a>
+            <a class="gwab" href="http://www.beian.gov.cn/portal/recordQuery" target="_blank">XXX</a>
+        </div> -->
+        <div class="remark iUp">
+            <p class="power">&copy; 2025
+                <a href="https://github.com/NaivG" target="_blank"> NaivG </a>
+                | Design By 
+                <a href="https://github.com/dmego" target="_blank"> Dmego </a>
+                | Powered By 
+                <a href="https://hitokoto.cn/" target="_blank"> Hitokoto </a>
+            </p>
+        </div>
+    </header>
+    
+    <!-- 捐赠弹窗 -->
+    <div id="donate-modal" class="donate-modal">
+      <div class="donate-modal-content">
+        <span class="close">&times;</span>
+        <div class="donate-header">
+          <h2 class="donate-title">感谢您的支持！</h2>
+        </div>
+        <div class="donate-body">
+          <div class="donate-text">
+            <p>如果您喜欢我的作品，并希望支持我继续创作更多有趣的内容，欢迎通过以下方式进行捐赠。</p>
+            <p>您的支持将帮助我：</p>
+            <ul>
+              <li>购买更好的创作设备</li>
+              <li>维护服务器和域名费用</li>
+              <li>投入更多时间在创作上</li>
+            </ul>
+            <p>感谢每一位支持者！</p>
+          </div>
+          <div class="donate-content">
+            <div class="donate-meme">
+              <img src="./assets/img/meme.jpg">
+            </div>
+            <div class="donate-qr">
+              <img src="./assets/img/qr.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="https://unpkg.com/dmego-home-page@latest/assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
+    <script>
+      // 获取弹窗元素
+      var modal = document.getElementById("donate-modal");
+      var btn = document.getElementById("donate-button");
+      var span = document.getElementsByClassName("close")[0];
+      
+      // 点击捐赠按钮时打开弹窗
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // 点击关闭按钮时关闭弹窗
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // 点击弹窗外部区域时关闭弹窗
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+</body>
+</html>
